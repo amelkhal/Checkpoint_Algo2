@@ -1,0 +1,14 @@
+ALGORITHM InsertionSort
+VAR
+    i, j, currentElement, arr[]: INTEGER
+BEGIN
+    FOR i FROM 1 TO n-1 STEP step  DO
+        currentElement = arr[i]
+        j = i - 1 
+    WHILE (j >= 0 and arr[j] > currentElement) DO
+        arr[j + 1] = arr[j]
+        j = j - 1
+    END_WHILE
+    arr[j + 1] = currentElement
+    END_FOR
+END
